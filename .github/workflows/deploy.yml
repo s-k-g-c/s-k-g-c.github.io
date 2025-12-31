@@ -36,11 +36,11 @@ jobs:
           chmod +x ./node_modules/.bin/vite
           ./node_modules/.bin/vite build
 
-      - name: Build Free-game-ya-san
-        run: |
-          cd Free-game-ya-san
-          npm install
-          ./node_modules/.bin/vite build
+      # - name: Build Free-game-ya-san
+      #   run: |
+      #     cd Free-game-ya-san
+      #     npm install
+      #     ./node_modules/.bin/vite build
 
       - name: Prepare deploy directory
         run: |
