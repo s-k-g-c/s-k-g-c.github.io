@@ -1,0 +1,361 @@
+.content-interval{
+    padding-top: 40px;
+}
+
+.page-pic{
+    padding-top: 80px;
+    position: relative;
+}
+
+
+.page-pic img{
+    width: 100vw;      /* 横を画面いっぱい */
+    height: 130px;     /* 縦を画面いっぱい */
+    object-fit: cover; /* 画面にフィットしつつ上下をトリミング */
+    object-position: center; /* 中央を基準にトリミング */
+    display: block;
+}
+
+.page-pic-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 中央に配置 */
+    color: #000000;
+    font-size: 2rem;
+    text-decoration-line: underline;
+    text-decoration-color: #008080;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 4px;
+    letter-spacing: 0.2em;
+}
+
+.page-pic-overlay{
+    position: absolute;
+    inset: 0;               /* 上下左右を0にして全体を覆う */
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.individual-page-area{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.individual-page-area2{
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.individual-page-heading,
+.individual-page-heading2,
+.individual-page-heading3{
+    letter-spacing: 0.2em;
+}
+
+.individual-page-heading{
+    position: relative;
+    padding: 5px 0;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 12px;
+    margin: 0 0 30px 0;
+}
+
+.individual-page-heading::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 5px;
+    background: #008080;
+}
+
+.individual-page-heading2{
+    position: relative;
+    padding: 5px 0;
+    color: #000000;
+    font-weight: bold;
+    padding-bottom: 12px;
+    margin: 0 0 30px 0;
+}
+
+.individual-page-heading2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    height: 5px;
+    background: #008080;
+}
+
+.individual-page-heading3{
+    position: relative;
+    padding: 5px 0;
+    color: #000000;
+    font-weight: bold;
+    padding-bottom: 12px;
+    margin: 0 0 30px 0;
+}
+
+.individual-page-heading3::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    height: 5px;
+    background: #008080;
+}
+
+.attention{
+    font-size: small;
+}
+
+/* 会社概要ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.corporate-philosophy{
+margin: auto;
+text-align: center;
+}
+
+.corporate-philosophy p {
+  margin: 0 0 1em;   /* 下だけ少し余白をつける */
+  line-height: 1.0;  /* 行間を揃える（必要なら） */
+}
+
+.our-mission{
+    margin: auto;
+}
+
+.our-mission ul{
+    width: 450px;
+    margin: 0 0 0 30px;
+    margin: auto;
+}
+
+.company-information{
+    margin: auto;
+}
+
+.company-information ul,
+.company-information .attention{
+    margin: 0 30px;
+}
+
+.company-information li {
+  display: flex;
+  gap: 20px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.company-information li::before {
+    content: "";
+}
+
+.company-information .date {
+  width: 170px;
+  font-weight: bold;
+  color: #555;
+}
+
+.company-information .title {
+  flex: 1;
+}
+
+/* 事業紹介ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.business-page-card{
+    display: flex;
+    border-radius: 2%;
+    padding:20px 0;
+    gap: 30px;
+}
+
+.business-page-card img{
+    width: 500px;
+    margin: 0 0 20px 0;
+}
+
+.business-page-card h4{
+  position: relative;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.business-page-card p{
+    margin: 0 20px 20px 20px;
+}
+/* ニュースーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/* #news-page{
+    width: 1000px;
+    margin: auto;
+    padding-top: 80px;
+} */
+#news-page li {
+  display: flex;
+  gap: 20px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#news-page .date {
+  font-weight: bold;
+  color: #555;
+}
+
+#news-page .title {
+  flex: 1;
+}
+
+#news-page li::before {
+  content: "";
+}
+/* 睡眠研究ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.page-toc{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.toc-button{
+    text-align: center;
+    width: 200px;
+    background: #ffffff;
+    border: 1px solid black;
+    padding: 10px 0;
+    border-radius: 3px;
+}
+
+.toc-button:hover{
+  color: #ffffff;
+  background-color: #008080;
+}
+
+.individual-page-content{
+    margin: 0 0 0 20px;
+}
+
+.first-letter::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+/* 採用情報ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.page-toc2{
+    display: flex;
+    margin: 70px 0 0 0;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recruit-page .individual-page-content2{
+    text-align: center;
+    margin: auto;
+}
+
+.recruit-page .individual-page-content3{
+    width: 700px;
+    margin: auto;
+}
+
+.recruit-page .individual-page-content3 p{
+    text-align: left;
+    margin: 5px 0 10px 20px;
+}
+
+.recruit-page .individual-page-content p{
+    text-align: left;
+}
+
+
+.recruit-page .individual-page-content{
+    width: 600px;
+    margin: auto;
+}
+
+.recruit-page .individual-page-content span,
+.recruit-page .individual-page-content3 span{
+    font-weight: bold;
+    font-size: large;
+}
+
+.recruit-page h3{
+       text-align: center; 
+}
+
+.recruit-page p{
+       text-align: center; 
+}
+
+@media (max-width: 1000px) {
+    .individual-page-area,
+    .individual-page-area2{
+        width: 95%;
+        padding-top: 0;       
+    }
+
+    .business-page-card{
+    flex-direction: column; /* 縦並びに切り替え */
+    align-items: flex-start;
+    gap: 3px;
+    margin: auto;
+}
+
+.business-page-card img{
+    margin: auto;
+}
+}
+
+@media (max-width: 767px) {
+
+body {
+    font-size: 14px;
+  }
+
+.company-information .date {
+  width: 20%;
+}
+
+.our-mission ul{
+    width: 95%;
+}
+
+.business-page-card img{
+    width: 95%;
+}
+
+.individual-page-heading3{
+    margin: 0 20px 10px 20px;
+}
+
+.individual-page-heading2{
+    margin: 0 20px 10px;
+}
+
+
+#news-page li{
+    flex-direction: column; /* 縦並びに切り替え */
+    align-items: flex-start;
+    gap: 3px;
+}
+
+#news-page .title{
+    flex: 2;
+}
+
+.recruit-page .individual-page-content,
+.recruit-page .individual-page-content2,
+.recruit-page .individual-page-content3{
+    width: 95%;
+    margin: auto;
+}
+
+
+}
