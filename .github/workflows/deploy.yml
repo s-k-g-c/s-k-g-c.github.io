@@ -50,6 +50,7 @@ jobs:
           cp -r Motion-Palette/dist deploy/Motion-Palette
           mkdir -p deploy/good-sleep-peace
           mkdir -p deploy/Pixel-Art-App
+          cp -r good-sleep-peace/* deploy/good-sleep-peace/
           cp -r Pixel-Art-App/* deploy/Pixel-Art-App/
 
       - name: Deploy all sites
