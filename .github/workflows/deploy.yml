@@ -45,8 +45,8 @@ jobs:
       - name: Prepare deploy directory
         run: |
           mkdir deploy
-          cp -r portfolio/dist deploy/portfolio-coding
-          cp -r portfolio/dist deploy/portfolio-front
+          cp -r portfolio-coding/dist deploy/portfolio-coding
+          cp -r portfolio-front/dist deploy/portfolio-front
           cp -r Motion-Palette/dist deploy/Motion-Palette
           mkdir -p deploy/Pixel-Art-App
           cp -r Pixel-Art-App/* deploy/Pixel-Art-App/
