@@ -48,6 +48,7 @@ jobs:
           cp -r portfolio-coding/dist deploy/portfolio-coding
           cp -r portfolio-front/dist deploy/portfolio-front
           cp -r Motion-Palette/dist deploy/Motion-Palette
+          mkdir -p deploy/good-sleep-peace
           mkdir -p deploy/Pixel-Art-App
           cp -r Pixel-Art-App/* deploy/Pixel-Art-App/
 
