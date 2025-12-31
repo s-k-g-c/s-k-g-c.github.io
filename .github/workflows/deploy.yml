@@ -17,11 +17,17 @@ jobs:
         with:
           node-version: '20.19.0'
 
-      - name: Build portfolio
+      - name: Build portfolio-front
         run: |
-          cd portfolio
+          cd portfolio-front
           npm install
           ./node_modules/.bin/vite build
+
+      - name: Build portfolio-coding
+        run: |
+          cd portfolio-coding
+          npm install
+          ./node_modules/.bin/vite build          
 
       - name: Build Motion-Palette
         run: |
