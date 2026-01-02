@@ -1,9 +1,9 @@
 <template>
-    <section class="about-text">
-        <p><span class="keyword cyan">PMO経験</span>あり。</p>
-        <p>フロントエンドを勉強中。</p>
-        <p><span class="keyword green">Vue</span>や<span class="keyword magenta">Figma</span>を使ってデザインも挑戦。</p>
-        <p>実装とデザイン、両方できるエンジニアを目指しています。</p>
+    <section class="about-text" id="about-text">
+        <p>PMO案件の経験を経て、</p>
+        <p><span class="keyword cyan">フロントエンド</span>を学習中です。</p>
+        <p><span class="keyword green">HTML/CSS</span> を中心に、<p>
+        </p>デザインから実装まで一貫して制作しています。</p>
     </section>
 </template>
 
@@ -11,12 +11,12 @@
 
 .about-text {
   padding: 20px 20px;
+  width: 415px;
   margin:20px auto 30px;
   font-size: 1.2rem; /* 少し大きめ */
   line-height: 1.6;
   font-family: 'Yu Gothic', 'Noto Sans JP', sans-serif;
   color: #222;
-  text-align: center;
   letter-spacing: 3px;
 }
 
@@ -74,5 +74,30 @@
   .keyword {
   font-size: 1.2rem;
   }
+}
+
+/* タブレット → スマホ（必須） */
+@media (max-width: 768px) {
+.about-text {
+  padding: 20px 20px;
+  width: 415px;
+  margin:20px auto 30px;
+  font-size: 1.1rem; /* 少し大きめ */
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+}
+
+/* 小さめスマホ */
+@media (max-width: 480px) {
+
+.about-text {
+  padding: 20px 0;
+  width: 100%;
+  margin:20px auto 30px;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
 }
 </style>

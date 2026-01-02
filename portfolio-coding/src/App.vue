@@ -1,5 +1,6 @@
 <template>
     <Starrain/>
+    <Header/>
     <main class="container">
         <div class="maincontents">
         <Hero />
@@ -13,6 +14,7 @@
 
 <script>
 import Starrain from './components/Starrain.vue'
+import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import Hero from './pages/Hero.vue'
 import About from './pages/About.vue'
@@ -23,11 +25,12 @@ export default {
   name: 'App',
   components: {
     Starrain,
-    Footer,
+    Header,
     Hero,
     About,
     Skill,
-    Works
+    Works,
+    Footer
   }
 }
 </script>

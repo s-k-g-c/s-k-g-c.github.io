@@ -1,17 +1,18 @@
 <template>
-<section class="works-list">
+<section class="works-list" id="works-list">
   <div class="work-item">
     <h3 class="title"><span>ポートフォリオサイト</span><span><small>※このサイトです。</small></span></h3>
     <div class="desc">
-      <p><strong>制作月　：</strong>2025年6月(デザイン+コーディング)</p>
+      <p><strong>制作月　：</strong>2025年6月</p>
       <p><strong>画面数　：</strong>1</p>
       <p><strong>制作期間：</strong>約3日</p>
       <p><strong>使用技術：</strong>HTML、CSS、JavaScript、Vue</p>
-      <p><strong>機能実装：</strong><br>レスポンシブ、Vueコンポーネント、キーフレームアニメーションなど</p>
+      <p><strong>担当：</strong>デザイン / コーディング</p>
+      <p><strong>機能実装：</strong><br>レスポンシブ、Vueコンポーネントなど</p>
     </div>
     <div class="site-seeing">
       <a
-        href="https://s-k-g-c.github.io/portfolio/"
+        href="https://s-k-g-c.github.io/portfolio-coding/"
         target="_blank"
         rel="noopener noreferrer"
         class="visit-link"
@@ -21,32 +22,65 @@
     </div>
 
     <div class="work-video">
-      <a href="https://s-k-g-c.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
+      <a href="https://s-k-g-c.github.io/portfolio-coding/" target="_blank" rel="noopener noreferrer">
         <img src="/src/assets/port-folio-site.png" alt="ポートフォリオサイト" />
       </a>
-      <!-- <video
-        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
-        controls
-        muted
-        width="100%"
-        >
-        お使いのブラウザは動画タグに対応していません。他のブラウザでご覧ください。
-      </video> -->
     </div>
 
     <div class="detail">
       <p><strong>概要：</strong></p>
-      <p>ポートフォリオサイトの公開を目的として作成したサイトです。構成や実装はChatGPTと相談しながら進め、コードの下書きをもとに自分で調整・仕上げまし、見た目と見やすさのバランスを意識して制作しました。<br>背景やテキストにホバーした際の動きなど、画面全体にアニメーションを多く取り入れ、デザインにこだわって制作しました。また、背景アニメーションについては、言葉で丁寧にイメージを伝えることで、希望通りの動きを実現できました。<br>サイトの公開はGitHub Pagesを使用し、エラー対応や設定作業も自力で行いました。</p>
+      <p>ポートフォリオ公開を目的に、デザインから実装まで制作。</p>
+      <p>背景アニメーションやホバー演出など、画面全体に動きを取り入れつつ、見やすさとのバランスを意識して構築しました。
+      </p>
+      <p>以降の作品含め、公開には GitHub Pages を使用し、設定やエラー対応まで一通り経験しています。</p>
+    </div>
+  </div>
+
+  <div class="work-item">
+    <h3 class="title"><span>架空コーポレートサイト</span><span></span></h3>
+    <div class="desc">
+      <p><strong>制作月　：</strong>2025年12月</p>
+      <p><strong>画面数　：</strong>6</p>
+      <p><strong>制作期間：</strong>5日</p>
+      <p><strong>使用技術：</strong>HTML / CSS / JavaScript / Vue</p>
+      <p><strong>担当：</strong>デザイン / コーディング</p>
+      <p><strong>機能実装：</strong><br>レスポンシブ対応、ハンバーガーメニュー</p>
+    </div>
+
+    <div class="site-seeing">
+      <a
+        href="https://s-k-g-c.github.io/good-sleep-peace/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="visit-link"
+      >
+        サイトを見る
+      </a>
+    </div>
+
+    <div class="work-video">
+      <a href="https://s-k-g-c.github.io/good-sleep-peace/" target="_blank" rel="noopener noreferrer">
+        <img src="/src/assets/Motion-Palette.png" alt="架空コーポレートサイト" />
+      </a>
+    </div>
+
+    <div class="detail">
+      <p><strong>概要：</strong></p>
+      <p>架空の企業を想定し、トップページのデザインと実装を行った制作物。</p>
+      <p>企業サイトらしい落ち着いた配色と情報整理を意識し、見やすいレイアウトになるよう構成しました。</p>
+      <p>セクションごとの余白調整や階層構造を丁寧に作り、レスポンシブ対応も実装しています。</p>
+      <p>HTML / CSS を中心に、コーポレートサイトの基本的なUI構成を学ぶ目的で制作しました。</p>
     </div>
   </div>
 
   <div class="work-item">
     <h3 class="title"><span>CSSアニメーションの</span><span>サンプルサイト</span></h3>
     <div class="desc">
-      <p><strong>制作月　：</strong>2025年6月(デザイン+コーディング)</p>
+      <p><strong>制作月　：</strong>2025年6月</p>
       <p><strong>画面数　：</strong>1</p>
-      <p><strong>制作期間：</strong>約2日</p>
-      <p><strong>使用技術：</strong>HTML、CSS、JavaScript、Vue</p>
+      <p><strong>制作期間：</strong>約3日</p>
+      <p><strong>使用技術：</strong>HTML / CSS / JavaScript / Vue</p>
+      <p><strong>担当：</strong>デザイン / コーディング</p>
       <p><strong>機能実装：</strong><br>Vueコンポーネント、キーフレームアニメーションなど</p>
     </div>
 
@@ -69,73 +103,10 @@
 
     <div class="detail">
       <p><strong>概要：</strong></p>
-      <p>CSSアニメーションの学習を目的に制作したサイトです。四角いオブジェクトのアニメーションはキーフレームを使って自然なループになるよう調整しました。<br>2画面ではございますが、Vueを用いてコンポーネントごとに整理しています。また、画面サイズに応じて表示内容が変化するようレスポンシブ対応も行っております。サイト全体のデザインはグラデーションを使用し、色数を抑え統一感を出しました。</p>
-    </div>
-  </div>
-
-  <div class="work-item">
-    <h3 class="title">ドット絵制作アプリ</h3>
-    <div class="desc">
-      <p><strong>制作月　：</strong>2025年5月(デザイン+コーディング)</p>
-      <p><strong>画面数　：</strong>1</p>
-      <p><strong>制作期間：</strong>1日</p>
-      <p><strong>使用技術：</strong>HTML、CSS、JavaScript、Vue</p>
-      <p><strong>機能実装：</strong><br>Vueコンポーネント、キーフレームアニメーションなど</p>
-    </div>
-
-    <div class="site-seeing">
-      <a
-        href="https://s-k-g-c.github.io/Pixel-Art-App/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="visit-link"
-      >
-        サイトを見る
-      </a>
-    </div>
-
-    <div class="work-video">
-      <a href="https://s-k-g-c.github.io/Pixel-Art-App/" target="_blank" rel="noopener noreferrer">
-        <img src="/src/assets/Pixel-Art-App.png" alt="ドット絵のお絵描きアプリ" />
-      </a>
-    </div>
-
-    <div class="detail">
-      <p><strong>概要：</strong></p>
-      <p>canvasの描画練習として、ドット絵のお絵描きアプリを制作しました。ペンと消しゴムの切り替え、パレットでの色変更、キャンバスのクリア、PNG画像の書き出しといった、基本的な機能を短期間で実装しています。<br>グリッドの描画で発生した再描画の不具合は、CSSへの切り替えとJavaScriptによる変数連携で解決しました。コードは改修のしやすさを意識して、サイズや色を変数で管理しています。<br>最低限の機能にとどまっているため、今後はレイヤー機能や保存機能などの追加にも取り組んでいきたいと考えています。</p>
-    </div>
-  </div>
-
-  <div class="work-item">
-    <h3 class="title">フリーゲームサイト</h3>
-    <div class="desc">
-      <p><strong>制作月　：</strong>2025年5月(デザイン+コーディング)</p>
-      <p><strong>画面数　：</strong>5（トップページ1、ミニゲーム4）</p>
-      <p><strong>制作期間：</strong>約5日</p>
-      <p><strong>使用技術：</strong>HTML、CSS、JavaScript、Vue</p>
-      <p><strong>機能実装：</strong><br>キーフレームアニメーションなど</p>
-    </div>
-
-    <div class="site-seeing">
-      <a
-        href="https://s-k-g-c.github.io/Free-game-ya-san/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="visit-link"
-      >
-        サイトを見る
-      </a>
-    </div>
-
-    <div class="work-video">
-      <a href="https://s-k-g-c.github.io/Free-game-ya-san/" target="_blank" rel="noopener noreferrer">
-        <img src="/src/assets/Free-game-ya-san.png" alt="フリーゲームサイト" />
-      </a>
-    </div>
-
-    <div class="detail">
-      <p><strong>概要：</strong></p>
-      <p>JavaScriptの学習の一環として、簡単なミニゲームを複数制作し、掲載したたサイトです。じゃんけんや数字当てなど、ルールがシンプルなゲームを中心に4種類を実装しました。<br>ゲームのアイデアはChatGPTとのやり取りで整理し、コードはヒントを参考にしながら自力で組み立てました。JavaScriptで本格的にロジックを書くのは初めてでしたが、試行錯誤を通じて基本的な構文や処理の流れに慣れることができました。今後デザイン面やボタン操作などの改善に取り組み、より使いやすく見やすい形にブラッシュアップする予定です。</p>
+      <p>CSSアニメーションの学習を目的に制作。</p>
+      <p>四角いオブジェクトの動きはキーフレームで自然なループになるよう調整しました。</p>
+      <p>2画面構成ですが、Vueでコンポーネント分割を行い、サイズに応じたレスポンシブ表示を実装。</p>
+      <p>全体のデザインはグラデーションを使い、色数を抑えて統一感を持たせています。</p>
     </div>
   </div>
 
@@ -143,6 +114,7 @@
 </template>
 
 <style>
+
 .site-seeing{
   grid-area: link;
   padding: 0.5rem;
@@ -281,6 +253,11 @@
 }
 
 @media (max-width: 768px) {
+  .works-list {
+  gap: 0px;
+  padding: 0rem 0rem;
+  }
+
   .work-item{
     grid-template-areas:
       "title"
@@ -318,7 +295,11 @@
   margin-left: auto;
   margin-right: auto;
 }
-  
+  .site-seeing{
+  padding: 0.3rem;
+  line-height: 1.3;
+  margin-top: -5px;
+}
 }
 
 @media (max-width: 967px) {
@@ -326,7 +307,15 @@
     content: "\A";       /* 改行コード */
     white-space: pre;    /* 改行を反映させる */
   }
-  
+  .detail p {
+  font-size: 15px;
+  line-height: 20px; /* 固定の高さにしたい場合 */
+}
+.site-seeing{
+  padding: 0rem;
+  line-height: 1.0;
+  margin-top: -10px;
+}
 }
 
 </style>

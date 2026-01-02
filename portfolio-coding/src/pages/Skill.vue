@@ -1,30 +1,13 @@
 <template>
-<section class="skills">
+<section class="skills" id="skills">
   <div class="skill-contents">
-    <div class="skill-category">
-      <h3><i class="fa-solid fa-paintbrush"></i>デザイン</h3>
-      <div class="skill-tag">
-        <div class="stars">★★☆☆☆</div>
-        <div class="tag-icon">
-          <i class="fa-brands fa-figma fa-lg"></i><span>Figma</span>
-        </div>
-      </div>
-      <div class="skill-tag">
-        <div class="stars">★★★★★☆</div>
-        <span>CLIP STUDIO PAINT</span>
-      </div>
-      <div class="skill-tag">
-        <div class="stars">★★☆☆☆</div>
-        <span>Illustrator</span>
-      </div>
-    </div>
-    
     <div class="skill-category">
       <h3><i class="fa-solid fa-code "></i>フロントエンド </h3>
       <div class="skill-tag">
         <div class="stars">★★★☆☆</div>
         <div class="tag-icon">
-          <i class="fab fa-html5 fa-lg"></i><span>HTML</span>
+          <i class="fab fa-html5 fa-lg"></i>
+          <span>HTML</span>
         </div>
       </div>
       <div class="skill-tag">
@@ -46,23 +29,61 @@
         </div>
       </div>
     </div>
+
+    <div class="skill-category">
+      <h3><i class="fa-solid fa-paintbrush"></i>デザイン</h3>
+
+      <div class="skill-tag p-adjustment">
+        <div class="stars">★★☆☆☆</div>
+        <div class="tag-icon">
+          <i class="fa-brands fa-figma fa-lg"></i><span>Figma</span>
+        </div>
+
+      </div>
+      <div class="skill-tag">
+        <div class="stars">★★★★★☆</div>
+        <div class="tag-icon">
+          <span>CLIP STUDIO PAINT</span></div>
+      </div>
+
+      <div class="skill-tag">
+        <div class="stars">★★☆☆☆</div>
+        <div class="tag-icon">
+          <span>Illustrator</span></div>
+      </div>
+    </div>
+    
   </div>
 </section>
 </template>
 
 <style>
+  .p-adjustment{
+    position: relative;
+    top: 2px;
+  }
 
 .tag-icon{
   display: flex;
   line-height: none;
   align-items: center;
-  gap: 8px;
   justify-content: center;
+  gap: 8px;
+  margin-top: 5px;
+  height: 50px;
 }
+
+.tag-icon i {
+  line-height: 1;
+  vertical-align: middle;
+}
+
 
 
 .skill-tag{
   text-align: center;
+  height: 80px;
+  
 }
 
 .skill-tag span i{
@@ -80,7 +101,7 @@
 }
 
 .skill-contents{
-  margin: 3cqmin auto 0;
+  margin: 3% auto 0;
 }
 
 .skill-category {
@@ -89,12 +110,12 @@
 
 .skills h2 {
   font-size: 1.5rem;
-    letter-spacing: 3px;
+  letter-spacing: 3px;
 }
 
 
 .skill-category h3 {
-    letter-spacing: 3px;
+  letter-spacing: 3px;
   font-size: 1.2rem;
   margin-bottom: 1.2rem;
   position: relative;
@@ -157,5 +178,53 @@
   100% {
     left: 125%;
   }
+}
+
+/* タブレット → スマホ（必須） */
+@media (max-width: 768px) {
+  .skills {
+  margin: 0 auto 50px;
+}
+
+.skill-category {
+  margin-bottom: 2.0rem;
+}
+.skills h2 {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: transparent; /* 枠なし */
+  padding: 0px 0px;
+  margin: 6px 8px;
+  text-align: center;
+  min-width: 100px;
+  position: relative;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.3;
+}
+.skill-category {
+  margin-bottom: 2.0rem;
+}
+}
+
+/* 小さめスマホ */
+@media (max-width: 480px) {
+.skills {
+  margin: 0 auto 40px;
+}
+  .skill-category {
+  margin-bottom: 1.5rem;
+}
+.skills h2 {
+  font-size: 1.3rem;
+  letter-spacing: 0px;
+}
+.skill-category {
+  margin-bottom: 0rem;
+}
 }
 </style>
