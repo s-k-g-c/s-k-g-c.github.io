@@ -15,12 +15,18 @@ import Menu from '../components/Menu.vue'
 <style scoped>
 .header-section {
     width: 100%;
+    height: 80px;
     background-image: linear-gradient(90deg, skyblue, pink);
     color: white;
     flex-shrink: 0;
     padding: 10px 30px;
     display: flex;
     justify-content: space-between;
+}
+
+
+a{
+    margin: auto 0;
 }
 
 h1 {
@@ -31,5 +37,27 @@ h1 {
 p{
     font-size: 12px;
     color: white;
+}
+
+/* タブレット → スマホ（必須） */
+@media (max-width: 768px) {
+    .header-section h1 {
+    font-size: 30px;
+    }
+
+    .header-section p {
+    font-size: 9px;
+    }
+}
+
+/* 小さめスマホ */
+@media (max-width: 480px) {
+    .header-section {
+        padding: 10px 20px;
+    }
+    .header-section h1 {
+    font-size: 28px;
+    }
+
 }
 </style>

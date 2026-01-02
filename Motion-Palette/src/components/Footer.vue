@@ -17,4 +17,14 @@ footer{
     justify-content: center;
 }
 
+/* タブレット → スマホ（必須） */
+@media (max-width: 768px) {
+
+}
+
+/* 小さめスマホ */
+@media (max-width: 480px) {
+
+}
+
 </style>

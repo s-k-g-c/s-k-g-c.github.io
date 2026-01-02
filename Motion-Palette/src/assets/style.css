@@ -30,12 +30,14 @@ body {}
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: skyblue;
   text-decoration: inherit;
 }
 
+
+
 a:hover {
-  color: #535bf2;
+  color: skyblue;
 }
 
 h1 {
@@ -56,7 +58,7 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: skyblue;
 }
 
 button:focus,
@@ -79,15 +81,11 @@ button:focus-visible {
 .container {
   display: flex;
   align-items: center;
-  /* ←これで maincontents を左右中央に */
-
-  flex: 1;
-  /* ヘッダー・フッターを除いた残りを占める */
+  flex: 1; /* ヘッダー・フッターを除いた残りを占める */
   flex-direction: column;
-  /* 縦方向に積む */
   padding: 20px 30px;
-  box-sizing: border-box;
-  /* padding込みで幅を正しく計算 */
+  width: 100%;
+  box-sizing: border-box;/* padding込みで幅を正しく計算 */
 }
 
 .maincontents {
@@ -96,9 +94,9 @@ button:focus-visible {
   flex-direction: column;
   padding: 20px 30px;
   box-sizing: border-box;
-  min-width: 1000px;
   max-width: 1000px;
   width: 100%;
+  min-width: 315px;
   /* 横幅を広げる */
   overflow: auto;
   /* 内容が溢れたらスクロール */
@@ -109,6 +107,22 @@ button:focus-visible {
 
 }
 
+/* タブレット → スマホ（必須） */
+@media (max-width: 768px) {
+
+  .container {
+    padding: 20px 20px;
+  }
+  .maincontents {
+    padding: 20px 0;
+  }
+}
+
+/* 小さめスマホ */
+@media (max-width: 480px) {
+
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -116,10 +130,10 @@ button:focus-visible {
   }
 
   a:hover {
-    color: #747bff;
+    /* color: #747bff; */
   }
 
   button {
-    background-color: #e9c2c2;
+    /* background-color: #e9c2c2; */
   }
 }

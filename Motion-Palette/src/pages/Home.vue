@@ -37,17 +37,16 @@
 }
 
 .animation-card-box-container{
-  flex: 1;
-    margin-top: 2rem;
+    flex: 1;
     width: 100%;
+    height: 500px;
     overflow: hidden;
     display: flex;
     align-items: center;
-    border: 1px solid gray;
-    border-radius: 8px;
 }
 
 #animation-card-box{
+    margin-top: 2rem;
     width: 100px;
     height: 100px;
     margin: auto;
@@ -93,7 +92,36 @@
 .animate3 {
   animation: scaleBox 2s ease infinite;
 }
+/* タブレット → スマホ（必須） */
+@media (max-width: 768px) {
+  .animation-card-box-container{
+    width: 100%;
+    height: 100%;
+    margin:0 auto 0;
+  }
+  
+  #animation-card-box{
+    width: 80px;
+    height: 80px;
+  }
+}
 
+/* 小さめスマホ */
+@media (max-width: 480px) {
+  #animation-card-box{
+    width: 50px;
+    height: 50px;
+  }
+
+  @keyframes scaleBox {
+  0% { transform: scale(1) translateX(0px);}
+  25% { transform: scale(1.5) translateX(-70px); }
+  50% { transform: scale(1) translateX(0px); }
+  75% { transform: scale(1.5) translateX(70px); }
+  100% { transform: scale(1) translateX(0px); }
+  }
+
+}
 </style>
 
 <script setup>
@@ -120,4 +148,5 @@ onMounted(() => {
   setRandomAnimation();
   setInterval(setRandomAnimation, 4000); // 3秒ごとに切り替え
 });
+
 </script>

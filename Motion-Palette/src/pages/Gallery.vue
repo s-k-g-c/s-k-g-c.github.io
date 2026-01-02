@@ -20,6 +20,11 @@ const animationItems = ref([
   { title: 'Heartbeat', animation: 'heartbeat' },
   { title: 'Scan', animation: 'scan' }
 ])
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 </script>
 
 
@@ -37,22 +42,60 @@ const animationItems = ref([
               <p>動くデザインの見本帳</p>
               <p>CSS Animation Showcase</p>
             </div>
-            <div class="animation-card-area">
-                <div v-for="(item, index) in animationItems" :key="index" class="animation-title">
-                    <div class="tex-erea">
-                      <p>◆</p>
-                      <p class="item-title-text">{{ item.title }}</p>
-                    </div>
-                    <div class="animation-card-box-container">
-                      <div class="animation-card-box" :class="item.animation"></div>
-                    </div>
-                </div>
+            <div class="animation-card-area-wrap">
+              <div class="animation-card-area">
+                  <div v-for="(item, index) in animationItems" :key="index" class="animation-title">
+                      <div class="tex-erea">
+                        <p>◆</p>
+                        <p class="item-title-text">{{ item.title }}</p>
+                      </div>
+                      <div class="animation-card-box-container">
+                        <div class="animation-card-box" :class="item.animation"></div>
+                      </div>
+                  </div>
+              </div>
             </div>
+            <button class="back-to-top" @click="scrollToTop"><span>TOP<br>↑</span></button>
         </div>
     </div>
 </template>
 
 <style scoped>
+
+/* タブレット → スマホ（必須） */
+@media (max-width: 768px) {
+  button.back-to-top {
+    display: flex;
+  }
+}
+
+/* 小さめスマホ */
+@media (max-width: 480px) {
+
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-image: linear-gradient(180deg, skyblue, pink);
+  color: white;
+  font-size: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top span{
+  font-size: 15px;
+}
+
+.animation-card-area-wrap{
+  justify-content:center;
+}
 
 .animation-card-area{
     height: 100%;
@@ -62,13 +105,10 @@ const animationItems = ref([
     grid-template-columns: repeat(auto-fill, 150px);
     grid-auto-rows: 230px;     /* 行の高さを固定し、新アイテムで自動追加 */
     gap: 20px;                 /* カード間の隙間 */
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .animation-title{
-    width: 100px;
-    height: 3rem;
-    display: block;
 }
 
 .tex-erea{
