@@ -23,7 +23,7 @@
 
     <div class="work-video">
       <a href="https://s-k-g-c.github.io/portfolio-coding/" target="_blank" rel="noopener noreferrer">
-        <img src="/src/assets/port-folio-site.png" alt="ポートフォリオサイト" />
+        <img src="/src/assets/port-folio-site.png" alt="ポートフォリオサイト">
       </a>
     </div>
 
@@ -60,7 +60,7 @@
 
     <div class="work-video">
       <a href="https://s-k-g-c.github.io/good-sleep-peace/" target="_blank" rel="noopener noreferrer">
-        <img src="/src/assets/Motion-Palette.png" alt="架空コーポレートサイト" />
+        <img src="/src/assets/corporate -website.png" alt="架空コーポレートサイト">
       </a>
     </div>
 
@@ -97,7 +97,7 @@
 
     <div class="work-video">
       <a href="https://s-k-g-c.github.io/Motion-Palette/" target="_blank" rel="noopener noreferrer">
-        <img src="/src/assets/Motion-Palette.png" alt="CSSアニメーションサンプルサイト" />
+        <img src="/src/assets/Motion-Palette.png" alt="CSSアニメーションサンプルサイト">
       </a>
     </div>
 
